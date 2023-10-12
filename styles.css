@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: Georgia;
+
+}
+
+.container {
+    margin: auto;
+    width: 904px;
+    height: 904px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+
+}
+
+.box {
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.input-box {
+    all:unset;
+    width: calc(100px - 3px);
+    height: calc(100px - 3px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
