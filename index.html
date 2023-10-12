@@ -3,11 +3,24 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <script>
-            function solve(){ window.alert('solving your puzzle')}
+            function solve(){
+                const matrix = []
+                for(let i=1; i<=9; i++){
+                    matrix[i] = []
+                    for(let j=1; j<=9; j++){
+                        const val = document.getElementById(`${i}.${j}`).value;
+                        matrix[i].push(val)
+
+                    }
+
+                }
+
+                console.table(matrix)
+            }
         </script>
     </head>
     <body>
-        <button type="button" onclick="alert('solving your puzzle')">solve</button>
+        <button type="button" onclick="solve()">solve</button>
         <div class="container">
             <div class="box">
                 <input type="number" id="1.1" class="input-box"/>
